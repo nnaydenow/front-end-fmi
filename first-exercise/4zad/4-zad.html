@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>First task</title>
+
+    <style>
+        body {
+            background-color: #F1F2F5;
+        }
+
+       .wrapper {
+            width: 400px;
+            background-color: white;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 10px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            box-sizing: border-box;
+        }
+
+        .poster {
+            width: 100%;
+        }
+
+        .comment {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            box-sizing: border-box;
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>
+            Harry Potter and the Deathly Hallows
+        </h1>
+        <strong>J.K. Rowling</strong>:
+        <p> Can you rate this movie? Do you like it?</p>
+        <img src="movie-poster.jpg" class="poster"/>
+        <h2>Comments</h2>
+        <hr />
+        <div class="comment">
+            <strong>Harry Potter</strong>
+            <span>5/5</span>
+        </div>
+        <div class="comment">
+            <strong>Hermione Granger</strong>
+            <span>4/5</span>
+        </div>
+        <div class="comment">
+            <strong>Ron Weasley</strong>
+            <span>4/5</span>
+            <p>Best one!</p>
+        </div>
+        <h2>Write comment</h2>
+        <hr />
+        <label for="comment">Write your comment:</label>
+        <br />
+        <textarea id="comment"></textarea>
+        <br />
+        0 <input type="range" min="0" max="5" value="3" name="rating" /> 5
+        <br/>
+        <Button>Send comment</Button>
+    </div>
+</body>
+
+</html>
